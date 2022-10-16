@@ -1,0 +1,108 @@
+.find-journey {
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    align-items: center;
+    padding-top: 30px;
+
+    &__title {
+        background: #fff;
+        border-radius: 67px;
+        color: #79655E;
+        text-transform: uppercase;
+        font-size: 26px;
+        line-height: 29px;
+        text-align: center;
+        max-width: 330px;
+        padding: 13px 40px;
+        font-weight: 300;
+        z-index: 10;
+        margin-bottom: -30px;
+        position: relative;
+        transform-style: preserve-3d;
+
+        &::after {
+            content: '';
+            position: absolute;
+            background-image: url('../../assets/subtract.png');
+            background-size: cover;
+            background-repeat: no-repeat;
+            height: 60px;
+            width: 100%;
+            max-width: 200px;
+            top: -18px;
+            z-index: 1;
+            left: 17%;
+            transform: translateZ(-1px);
+        }
+       
+    }
+
+    &__form {
+        background: #FFFFFF;
+        border-radius: 10px;
+        box-shadow: 0px 18px 38px rgba(0, 0, 0, 0.11);
+        padding: 36px 36px 30px;
+        display: flex;
+        align-items: center;
+        flex-direction: row;
+        justify-content: space-between;
+        width: 100%;
+
+        &-container {
+            display: flex;
+            align-items: flex-start;
+            flex-direction: column;
+        }
+
+        & label {
+            display: flex;
+            align-items: center;
+            font-size: 16px;
+            line-height: 23px;
+            color: #79655E;
+            font-weight: 300;
+
+            & img {
+                padding-right: 5px;
+                height: 15px;
+            }
+        }
+
+        & input {
+            color: #0C0B10;
+            font-size: 16px;
+            line-height: 23px;
+            border: none;
+            outline: none;
+            padding-left: 15px;
+
+            &::placeholder {
+                color: #0C0B10;
+            }
+        }
+
+        & button {
+            position: relative;
+            background: #0C0B10;
+            border-radius: 121px;
+            border: none;
+            font-size: 24px;
+            line-height: 27px;
+            padding: 21px 23px 21px 43px;
+            color: #fff;
+            text-transform: uppercase;
+
+            &::before {
+                content: '';
+                position: absolute;
+                background-image: url('../../assets/searchIcon.png');
+                background-repeat: no-repeat;
+                width: 22px;
+                height: 21px;
+                left: 13px;
+                top: 22px;
+            }
+        }
+    }
+}

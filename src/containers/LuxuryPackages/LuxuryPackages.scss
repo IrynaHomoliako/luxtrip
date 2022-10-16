@@ -1,0 +1,144 @@
+.luxury-packages {
+
+    background: linear-gradient(180deg, #E2D3CE 0%, #C9C8D8 30.73%, #D4D8C6 59.37%, #E2D3CE 100%);
+    padding: 40px 0;
+    margin-bottom: 30px;
+    position: relative;
+
+    & .section-title {
+        justify-content: flex-start;
+        max-width: 215px;
+    }
+    & .section-title__img {
+        display: none;
+    }
+
+    &__container {
+        display: grid;
+        grid-template-columns: repeat(3, 1fr);
+        grid-gap: 20px;
+        z-index: 3;
+        position: relative;
+
+        padding: 100px 0;
+    }
+
+    &__card {
+        max-width: 350px;
+        position: relative;
+
+        &:nth-child(2n) {
+            margin-top: -60px;
+        }
+
+        &:last-child {
+            margin-top: 60px;
+        }
+
+        &::before {
+            content: '';
+            position: absolute;
+            background: linear-gradient(180deg, rgba(0, 0, 0, 0) 0%, #0B2034 100%);
+            transform: rotate(180deg);
+            height: 30%;       
+            width: 100%; 
+            border-bottom-left-radius: 10px;
+            border-bottom-right-radius: 10px;
+        }
+
+        img {
+            max-width: 100%;
+            border-radius: 10px;
+        }
+
+        &-title {
+            position: absolute;
+            top: 60px;
+            color: #fff;
+            font-size: 36px;
+            line-height: 36px;
+            text-align: center;
+            max-width: 220px;
+            left: 17%;
+        }
+
+        &-rhombus {
+           position: absolute;
+           bottom: 30%;
+           right: 45%;
+           transform: translate(0, -50%);
+           display: flex;
+           align-items: center;
+           justify-content: center;
+           flex-direction: column;
+           cursor: pointer;
+
+
+           
+           &::after {
+            content: '';
+            background-image: url('../../assets/rhombusHeader.png');
+            width: 100px;
+            height: 189px;
+            position: absolute;
+            background-repeat: no-repeat;
+            background-size: cover;
+            bottom: -53px;
+           }
+        }
+
+        &-count {
+            color: #fff;
+            font-size: 35px;
+            line-height: 35px;
+        }
+
+        p {
+            color: #fff;
+            font-size: 21px;
+            line-height: 21px;
+        }
+
+        &-arrow {
+            color: #fff;
+        }
+    }
+
+    &__bg {
+        width: 100%;
+        position: absolute;
+        top: 60%;
+       
+
+        &::before {
+            content: '';
+            height: 50%;
+            width: 100%;
+            position: absolute;
+            left: 0;
+            top: -10%;
+            right: 0;
+            background: linear-gradient(180deg, rgba(226, 211, 206, 0) 0%, rgba(226, 211, 206, 0.71) 42.71%, #E2D3CE 100%);
+            transform: rotate(180deg);
+        }
+
+
+        &::after {
+            content: '';
+            height: 50%;
+            width: 100%;
+            position: absolute;
+            left: 0;
+            bottom: 100%;
+            right: 0;
+            background: linear-gradient(180deg, rgba(226, 211, 206, 0) 0%, rgba(226, 211, 206, 0.71) 42.71%, #E2D3CE 100%);        
+        }
+
+        img {
+            max-width: 100%;
+            width: 100%;
+            object-fit: cover; z-index: -10;
+        }
+        
+    }
+}

@@ -1,0 +1,72 @@
+*,
+*:before,
+*:after {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+html {
+  scroll-behavior: smooth;
+}
+
+a {
+    text-decoration: none;
+    cursor: pointer;
+    color: inherit;
+  }
+
+
+button {
+  color: inherit;
+}
+
+ul, li {
+    list-style: none;
+}
+
+
+body {
+    font-family: 'Manrope', sans-serif;
+    color: #000;
+    background: #E2D3CE;
+}
+
+.container {
+  max-width: 1130px;
+  margin: 0 auto;
+  padding: 0 15px;
+}
+
+
+.title-font {
+    font-family: 'Forum', cursive;
+    font-weight: 400;
+}
+
+.container-title {
+  font-family: 'Forum', cursive;
+  font-weight: 400;
+  font-size: 60px;
+  line-height: 58px;
+  color: #0C0B10;
+}
+
+.button {
+  border: 1px solid #0C0B10;
+  border-radius: 61px;
+  background: transparent;
+  text-transform: uppercase;
+  font-size: 16px;
+  line-height: 18px;
+  font-family: 'Forum', cursive;
+  font-weight: 400;
+  padding: 11px 35px;
+  text-align: center;
+  transition: all 0.3s ease-in;
+  opacity: 0.6;
+
+  &:hover {
+    opacity: 1;
+  }
+}
